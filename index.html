@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/lightslider.js"></script>
+    <title>Marvel</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #a4152c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 350px;
+        height: 610px;
+        background-color: #1e1e26;
+        border-radius: 10px;
+        box-shadow: 2px 10pox 12px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 20px 10px;
+    }
+
+    .model {
+        height: 350px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    .details p {
+        font-family: calibri;
+        font-weight: bold;
+        color: #6a6a74;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .marvel {
+        color: #33232e;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: bebas kai;
+        font-size: 25px;
+    }
+    .logo{
+        height: 60px;
+    }
+    .box:hover{
+        background-color: #17171d;
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+        transition: all ease 0.3s;
+    }
+    .box:hover .marvel{
+        color: #c0292b;
+        transition: all ease 0.5s;
+    }
+    @media (max-width: 720px) {
+        .box{
+            width: 100%;
+            height: 500px;
+        }
+        .model{
+            height: 250px;
+        }
+        .details p{
+            font-size: 16px;
+            width: 250px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/Ant-Man.png" class="model">
+                    <div class="details">
+                        <img src="img/AntMan-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p>一名前系統工程師與竊盜犯，偷竊技巧十分高超，其特質被第一代蟻人漢克·皮姆所挑選上，因而成為第二代蟻人。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/DeadPool.png" class="model">
+                    <div class="details">
+                        <img src="img/Deadpool-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p>主角在他人迫害下毀容的同時意外取得異變超能力，變成話特別多而且經常打破第四面牆的反英雄。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/SpiderMan.png" class="model">
+                    <div class="details">
+                        <img src="img/SpiderMan-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p></p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/IronMan.png" class="model">
+                    <div class="details">
+                        <img src="img/IronMan-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p>身兼企業家與發明家的東尼·史塔克在被恐怖分子綁架時打造出一套鋼鐵人動力服，進而成為擁有先進技術的超級英雄「鋼鐵人」。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/Thor.png" class="model">
+                    <div class="details">
+                        <img src="img/Thor-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p>神界阿斯嘉的王儲索爾在重新點燃一場古老戰役後，被剝奪一切並放逐到地球，索爾必須證明自己配得上雷神之鎚，重拾雷神的力量。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-a">
+                <div class="box">
+                    <p class="marvel">MARVEL</p>
+                    <img src="img/Venom.png" class="model">
+                    <div class="details">
+                        <img src="img/Venom-logo.png" class="logo" width="100px" style="height: auto;">
+                        <p>一位居住在舊金山的著名調查記者，待人善良且富有正義感，持續追蹤生命基金會的內幕卻毀掉生活。之後偶然成為共生體「猛毒」的宿主。</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
